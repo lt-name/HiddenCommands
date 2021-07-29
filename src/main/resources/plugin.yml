@@ -1,0 +1,16 @@
+name: HiddenCommands
+main: cn.lanink.hiddencommands.Main
+version: "1.0.0"
+api: ["1.0.9"]
+load: POSTWORLD
+author: "LT_Name"
+
+commands:
+  hcmd:
+    description: "§a HiddenCommands command"
+    usage: "/HiddenCommands help"
+    permission: hcmd.admin
+
+permissions:
+  hcmd.admin:
+    default: op
