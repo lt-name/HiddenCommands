@@ -80,6 +80,9 @@ public class Main extends PluginBase implements Listener {
 
     @EventHandler
     public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event) {
+        if (event.getPlayer().isOp()) {
+            return;
+        }
         if ("/help".equalsIgnoreCase(event.getMessage().split(" ")[0]) &&
                 this.getConfig().getBoolean("隐藏命令")) {
             event.setCancelled(true);
